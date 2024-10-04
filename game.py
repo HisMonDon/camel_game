@@ -47,5 +47,11 @@ while not done:
         thirst += 1
         camel_tiredness += 1
         natives_distance += random.randint(7, 14)
+    elif choice == 'A':
+        if drinks_in_canteen > 0:
+            drinks_in_canteen -= 1
+            thirst = 0
+        else:
+            print("You have no water.")
     
     print()

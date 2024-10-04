@@ -53,5 +53,8 @@ while not done:
             thirst = 0
         else:
             print("You have no water.")
+
+    if thirst > 4:
+        print("You are thirsty.")
     
     print()

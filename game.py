@@ -1,16 +1,39 @@
-print("Welcome to Camel! \nYou have stolen a camel to make your way across the great Mobi desert.\nThe natives want their camel back and are chasing you down! Survive your\ndesert trek and out run the natives.")
-done=False
+# 1
+print("Welcome to Camel!")
+print("You have stolen a camel to make your way across the great Mobi desert.")
+print("The natives want their camel back and are chasing you down! Survive your")
+print("desert trek and outrun the natives.")
+print()
+
+# 2
+done = False
+# 8
 miles_traveled = 0
-thirst=0
+thirst = 0
 camel_tiredness = 0
+# 9
 natives_distance = -20
+# 10
 drinks_in_canteen = 3
+
+# 3
 while not done:
-    print("Choose your move:\nA. Drink from your canteen.\nB. Ahead moderate speed.\nC. Ahead full speed.\nD. Stop for the night.\nE. Status check.\nQ. Quit.")
-    choice = input()
+    # 4
+    print("A. Drink from your canteen.")
+    print("B. Ahead moderate speed.")
+    print("C. Ahead full speed.")
+    print("D. Stop and rest.")
+    print("E. Status check.")
+    print("Q. Quit.")
+    
+    # 5
+    choice = input("Your choice? ")
+    # 6
     choice = choice.upper()
+
     if choice == 'Q':
         done = True
+    # 11
     elif choice == 'E':
         print("Miles Traveled: ", miles_traveled)
         print("Drinks in canteen: ", drinks_in_canteen)

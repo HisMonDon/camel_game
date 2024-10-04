@@ -49,12 +49,15 @@ while not done:
         natives_distance += random.randint(7, 14)
     elif choice == 'A':
         if drinks_in_canteen > 0:
-            drinks_in_canteen -= 1
+            drinks_in_canteen -= 1  
             thirst = 0
         else:
             print("You have no water.")
 
-    if thirst > 4:
+    if thirst > 6:
+        print("You died of thirst!")
+        done = True
+    elif thirst > 4:
         print("You are thirsty.")
     
     print()

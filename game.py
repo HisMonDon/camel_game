@@ -41,5 +41,11 @@ while not done:
         thirst += 1
         camel_tiredness += random.randint(1, 3)
         natives_distance += random.randint(7, 14)
+    elif choice == 'B':
+        miles_traveled += random.randint(5, 12)
+        print("You've traveled", miles_traveled, "miles.")
+        thirst += 1
+        camel_tiredness += 1
+        natives_distance += random.randint(7, 14)
     
     print()

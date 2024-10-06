@@ -53,12 +53,23 @@ while not done:
             thirst = 0
         else:
             print("You have no water.")
+    
+    if random.randint(1, 20) == 1:
+        print("You found an oasis!")
+        drinks_in_canteen = 3
+        thirst = 0
+        camel_tiredness = 0
 
-    if thirst > 6:
-        print("You died of thirst!")
+    if miles_traveled >= 200:
+        print("You made it across the desert! You won!")
         done = True
-    elif thirst > 4:
-        print("You are thirsty.")
+
+    if not done:
+        if thirst > 6:
+            print("You died of thirst!")
+            done = True
+        elif thirst > 4:
+            print("You are thirsty.")
         
     if not done:
         if camel_tiredness > 8:
@@ -73,9 +84,5 @@ while not done:
             done = True
         elif miles_traveled - natives_distance < 15:
             print("The natives are getting close!")
-    
-    if not done and miles_traveled >= 200:
-        print("You made it across the desert! You won!")
-        done = True
     
     print()

@@ -60,14 +60,22 @@ while not done:
     elif thirst > 4:
         print("You are thirsty.")
         
-    if not done and camel_tiredness > 8:
-        print("Your camel is dead.")
-        done = True
-    elif camel_tiredness > 5:
-        print("Your camel is getting tired.")
+    if not done:
+        if camel_tiredness > 8:
+            print("Your camel is dead.")
+            done = True
+        elif camel_tiredness > 5:
+            print("Your camel is getting tired.")
 
-    if not done and natives_distance >= miles_traveled:
-        print("The natives have caught up!")
+    if not done:
+        if natives_distance >= miles_traveled:
+            print("The natives have caught up!")
+            done = True
+        elif miles_traveled - natives_distance < 15:
+            print("The natives are getting close!")
+    
+    if not done and miles_traveled >= 200:
+        print("You made it across the desert! You won!")
         done = True
     
     print()

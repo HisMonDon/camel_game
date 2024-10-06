@@ -65,5 +65,9 @@ while not done:
         done = True
     elif camel_tiredness > 5:
         print("Your camel is getting tired.")
+
+    if not done and natives_distance >= miles_traveled:
+        print("The natives have caught up!")
+        done = True
     
     print()

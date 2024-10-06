@@ -59,5 +59,8 @@ while not done:
         done = True
     elif thirst > 4:
         print("You are thirsty.")
+        
+    if camel_tiredness > 5:
+        print("Your camel is getting tired.")
     
     print()

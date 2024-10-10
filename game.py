@@ -28,7 +28,7 @@ while not done:
     if choice == 'Q':
         done = True
     elif choice == 'E':
-        print("YOUR STATUS\n______________________")
+        print("YOUR STATUS\n-----------------")
 
         print("Miles Traveled:", miles_traveled)
         print("Drinks in canteen:", drinks_in_canteen)

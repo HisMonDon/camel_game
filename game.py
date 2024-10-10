@@ -84,5 +84,6 @@ while not done:
             done = True
         elif miles_traveled - natives_distance < 15:
             print("The natives are getting close!")
-
+    if miles_traveled >= 200:
+        done = True
     print("")

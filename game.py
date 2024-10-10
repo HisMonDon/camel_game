@@ -11,7 +11,7 @@ miles_traveled = 0
 thirst = 0
 camel_tiredness = 0
 natives_distance = -20
-drinks_in_canteen = 3
+drinks_in_canteen = 5
 
 while not done:
     print("A. Drink from your canteen.")
@@ -84,6 +84,11 @@ while not done:
             done = True
         elif miles_traveled - natives_distance < 15:
             print("The natives are getting close!")
+    randomnumber = random.randint(1, 20)
+    if randomnumber == 5:
+        camel_tiredness = 0
+        thirst = 0
+        drinks_in_canteen = 5
     if miles_traveled >= 200:
         done = True
     print("")

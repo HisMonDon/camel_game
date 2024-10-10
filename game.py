@@ -28,6 +28,8 @@ while not done:
     if choice == 'Q':
         done = True
     elif choice == 'E':
+        print("YOUR STATUS\n______________________")
+
         print("Miles Traveled:", miles_traveled)
         print("Drinks in canteen:", drinks_in_canteen)
         print("The natives are", miles_traveled - natives_distance, "miles behind you.")

@@ -21,11 +21,12 @@ while not done:
     print("E. Status check.")
     print("Q. Quit.")
 
-    choice = input("Your choice? ")
+    choice = input("Your choice? ").strip()
     print()
     choice = choice.upper()
 
     if choice == 'Q':
+        print("Thanks for playing Camel!")
         done = True
     elif choice == 'E':
         print("YOUR STATUS\n-----------------")

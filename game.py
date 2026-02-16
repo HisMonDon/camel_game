@@ -21,11 +21,12 @@ while not done:
     print("E. Status check.")
     print("Q. Quit.")
 
-    choice = input("Your choice? ")
+    choice = input("Your choice? ").strip()
     print()
     choice = choice.upper()
 
     if choice == 'Q':
+        print("Thanks for playing Camel!")
         done = True
     elif choice == 'E':
         print("YOUR STATUS\n-----------------")
@@ -55,6 +56,10 @@ while not done:
             thirst = 0
         else:
             print("You have no water.")
+    else:
+        print("Invalid choice. Please choose A, B, C, D, E, or Q.")
+        print("")
+        continue
 
     if random.randint(1, 20) == 1:
         print("You found an oasis!")
